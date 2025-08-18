@@ -1,11 +1,7 @@
 num = int(input("Enter the no. : "))
 
-if(num%10==4 and num%3==0):
-    print("Last digit is 4 and divisible by 3.")
-elif(num%10==4):
-    print("Last digit is 4.")
-elif(num%3==0):
-    print("Divisible by 3.")
+if(num%10==4  or num%3==0):
+    print("Condition is true.
 else:
-    print("No condition is true.")
+    print("Condition is  not true.")
     
