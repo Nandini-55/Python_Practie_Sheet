@@ -36,3 +36,67 @@ print("Cost of ",bill[1][0],"is :",bill[1][1])
 #Length function
 print(len(bill))
 print(len(bill[0]))
+
+
+#append function - adds element at the end of the list
+marks.append(95)
+print(marks)        
+#marks.append([67,78])  # can add list as an element
+#print(marks)   
+#marks.append((67,78))  # can add tuple as an element
+#print(marks)
+#marks.append(24,89) ` # TypeError: list.append() takes exactly one argument (2 given)
+#marks.append('A')  # can add different data type
+#print(marks)   
+
+#insert function - adds element at the specified index
+marks.insert(1,67)
+print(marks)    
+#marks.insert(10,67)  # can add at index greater than length of list
+#print(marks)
+
+#extend function - adds elements of another list at the end of the list
+marks.extend([34,78])
+print(marks)    
+#marks.extend((34,78))  # can add tuple as well
+#print(marks)
+#marks.extend(34)  # TypeError: 'int' object is not iterable
+#print(marks)
+#marks.extend('A')  # can add string as well - adds each character as an element
+#print(marks)
+
+#remove function - removes the specified element's first occurrence
+marks.remove(67)
+print(marks)    
+#marks.remove(100)  # ValueError: list.remove(x): x not in list
+#print(marks)
+
+#pop function - removes element at the specified index or from the end if index not specified
+marks.pop()
+print(marks)    
+#marks.pop(10)  # IndexError: pop index out of range
+#print(marks)
+
+#reverse function - reverses the list - time complexity O(n) space complexity O(1)
+marks.reverse()
+print(marks)
+
+#reversed function - returns the reversed iterator(object) of the list - time complexity O(n) space complexity O(n)
+marks=reversed(marks)  # marks becomes an iterator
+print(marks)
+marks=list(reversed(marks))  # marks becomes a list again
+print(marks)
+
+#reverse slicing - another way to reverse a list
+marks=marks[::-1]
+print(marks)
+#time complexity O(n) space complexity O(n)
+
+# reverse using loop - another way to reverse a list
+n=len(marks)
+for i in range(n//2):
+    marks[i],marks[n-i-1]=marks[n-i-1],marks[i]
+print(marks)
+#time complexity O(n) space complexity O(1)
+
+
