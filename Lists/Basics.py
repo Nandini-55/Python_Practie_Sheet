@@ -1,32 +1,32 @@
 #List - is used to store mulitple and hetrogenous variables in a single variable
 
-#Creating list
-marks=[89,49,35]
-print("List of marks of students : ")
-print(marks)
-
-#Features of list - 
-# can store variables of different data type
-details=['Nandini',True,'98']
-print("Details of student : ")
-print(details)
-
-#can store duplicates 
-age=[16,16,17,18,20,20]
-print(age)
-
-#Indexing and Accessing elements 
-
-#E.g.- updating marks 
-marks[2]=79
-print(marks)
-
-# marks[10]=90  # IndexError: list assignment index out of range
+# #Creating list
+# marks=[89,49,35]
+# print("List of marks of students : ")
 # print(marks)
 
-#Accessing elements from 2D list
-bill=[['Oil',100],['Bread',55],['Chips',25]]
-print("Cost of ",bill[1][0],"is :",bill[1][1])
+# #Features of list - 
+# # can store variables of different data type
+# details=['Nandini',True,'98']
+# print("Details of student : ")
+# print(details)
+
+# #can store duplicates 
+# age=[16,16,17,18,20,20]
+# print(age)
+
+# #Indexing and Accessing elements 
+
+# #E.g.- updating marks 
+# marks[2]=79
+# print(marks)
+
+# # marks[10]=90  # IndexError: list assignment index out of range
+# # print(marks)
+
+# #Accessing elements from 2D list
+# bill=[['Oil',100],['Bread',55],['Chips',25]]
+# print("Cost of ",bill[1][0],"is :",bill[1][1])
 
 #List vs Array 
 # List - stores heterogenous data types  e.g.-details=['Nandini',True,'98']
@@ -34,10 +34,11 @@ print("Cost of ",bill[1][0],"is :",bill[1][1])
 
 
 #Length function
-print(len(bill))
-print(len(bill[0]))
+# print(len(bill))
+# print(len(bill[0]))
 
 
+marks=[89,49,35]
 #append function - adds element at the end of the list
 marks.append(95)
 print(marks)        
@@ -74,18 +75,20 @@ print(marks)
 #pop function - removes element at the specified index or from the end if index not specified
 marks.pop()
 print(marks)    
+marks.pop(1)
+print(marks)    
 #marks.pop(10)  # IndexError: pop index out of range
 #print(marks)
 
 #reverse function - reverses the list - time complexity O(n) space complexity O(1)
-marks.reverse()
-print(marks)
+# marks.reverse()
+# print(marks)
 
 #reversed function - returns the reversed iterator(object) of the list - time complexity O(n) space complexity O(n)
-marks=reversed(marks)  # marks becomes an iterator
-print(marks)
-marks=list(reversed(marks))  # marks becomes a list again
-print(marks)
+reversed_marks=reversed(marks)  # marks becomes an iterator
+print(reversed_marks)
+reversed_marks=list(reversed_marks)  # marks becomes a list again
+print(reversed_marks)
 
 #reverse slicing - another way to reverse a list
 marks=marks[::-1]
