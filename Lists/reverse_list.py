@@ -20,3 +20,8 @@ for i in range(n//2):
     marks[i],marks[n-i-1]=marks[n-i-1],marks[i]
 print(marks)
 # time complexity O(n) space complexity O(1)
+
+#e.g.-
+mylist = [1.4, 2, 3, 4, 5, "Suyash"]
+mylist.reverse()
+print(mylist)
