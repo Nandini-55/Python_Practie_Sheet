@@ -6,5 +6,4 @@ failed=0
 for mark in marks:
     if(mark>=35):passed+=1
     else:failed+=1
-print("Passed students :",passed)
-print("Failed students :",failed)
+print(passed,failed)
