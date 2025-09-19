@@ -9,22 +9,3 @@ for i in range(n):
             pairCount+=1
 
 print(pairCount)
-
-# deadlines.sort()
-# print(*deadlines)
-# low=0
-# high=len(deadlines)-1
-# while(high>low):
-#     h=deadlines[high]
-#     print(h)
-#     l=deadlines[low]
-#     print(l)
-#     if((h+l)==target):
-#         pairCount+=1
-#         low+=1
-#         high-=1
-#     elif((h+l)>target):
-#         high-=1
-#     else:
-#         low+=1
-# print(pairCount)
