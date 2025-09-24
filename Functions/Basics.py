@@ -53,3 +53,16 @@ def pythagorus(b,p):
 pythagorus(5,8)
 #q - write a program to make a calculator using fucntion
 
+def sum(a,b):
+    print(a+b)
+def sub(a,b):
+    print(a-b)
+def multi(a,b):
+    print(a*b)
+def div(a,b):
+    print(a/b)
+
+def cal():
+    choice=int(input("Enter 1.Sum 2.Subtract 3.Multiply 4.Divide"))
+    a=int(input("First no. : "))
+    b=int(input("Second no. : "))
