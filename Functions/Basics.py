@@ -50,7 +50,7 @@ def pythagorus(b,p):
     h=(b*b)+(p*p)
     print(math.sqrt(h))
 
-pythagorus(5,8)
+# pythagorus(5,8)
 #q - write a program to make a calculator using fucntion
 
 def sum(a,b):
@@ -63,6 +63,23 @@ def div(a,b):
     print(a/b)
 
 def cal():
-    choice=int(input("Enter 1.Sum 2.Subtract 3.Multiply 4.Divide"))
-    a=int(input("First no. : "))
-    b=int(input("Second no. : "))
+    repeat =True
+    while(repeat):
+        choice=int(input("Enter 1.Sum 2.Subtract 3.Multiply 4.Divide  : "))
+        a=int(input("First no. : "))
+        b=int(input("Second no. : "))
+        match choice:
+            case 1:
+                sum(a,b)
+            case 2:
+                sub(a,b)
+            case 3:
+                multi(a,b)
+            case 4:
+                div(a,b)
+            case _:
+                print("invalid choice")
+        reply = input("Want to continue? y/n  ")
+        if(reply=="n"):repeat=False
+
+cal()
