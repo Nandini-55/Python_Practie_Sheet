@@ -1,19 +1,9 @@
 str=input()
-check=input()
-result=""
-idx=0
 count=0
-for i in range(len(str)):
-    if( idx<len(check) and str[i]==check[idx]):
-        result+=str[i]
-        idx+=1
-        if(result==check):
-            count+=1
-            idx=0
-            result=""
-    else:
-        idx=0
-        result=""
+for i in range(len(str)-2):
+    if(str[i]=="b" and str[i+1]=="o" and str[i+2]=="b"):
+        count+=1
+        
 print(count)
 
 
