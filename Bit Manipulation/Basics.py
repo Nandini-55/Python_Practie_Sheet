@@ -6,3 +6,6 @@
 
 #Properties - 
 # o - if a and 1==0 then its even  else odd
+
+#Right shift opeator :-   a>>i  = a/2^i
+#a=10 - 1010
