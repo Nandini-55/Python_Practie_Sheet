@@ -9,3 +9,6 @@
 
 #Right shift opeator :-   a>>i  = a/2^i
 #a=10 - 1010
+
+# set bit =1
+# unset bit =0
